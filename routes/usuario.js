@@ -5,7 +5,7 @@ const { validarJWT } = require('../middleware/validar-jwt');
 
 Router.get('/',TraerUsuario);
 Router.post('/',CrearUsuarios);
-Router.delete('/:id',EliminarUsuario,validarJWT);
+Router.delete('/:id',validarJWT,EliminarUsuario);
 Router.put('/:id',ActualizarUSuario);
 
 
