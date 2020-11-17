@@ -72,8 +72,6 @@ const EliminarCita = async (req,res)=>{
     
     try {
         
-        
-        
         const cita = await Citas.findByIdAndDelete(id);
 
         if (!cita){
@@ -106,12 +104,8 @@ const EliminarCita = async (req,res)=>{
             error
 
         });
-
         
     }
-
-
-
 
 }
 

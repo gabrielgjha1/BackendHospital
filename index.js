@@ -31,7 +31,10 @@ app.use(cors());
 
 
 
-app.use('/citas',require('./routes/citas'))
+app.use('/citas',require('./routes/citas'));
+app.use('/login',require('./routes/login'));
+app.use('/usuarios',require('./routes/usuario'));
+
 
 app.listen(process.env.PORT,()=>{
 
